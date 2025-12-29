@@ -42,13 +42,13 @@ To deploy successfully to our Azure environment:
 
     env:
       IMAGE_REGISTRY_URL: ghcr.io
-      AZURE_RESOURCE_GROUP: cd-with-actions
-      AZURE_APP_PLAN: actions-ttt-deployment
-      AZURE_LOCATION: '"East US"'
+      AZURE_RESOURCE_GROUP: rg-ttt
+      AZURE_APP_PLAN: plan-ttt
+      AZURE_LOCATION: canadacentral
       ###############################################
-      ### Replace <username> with GitHub username ###
+      ### Replace jazzedine with GitHub username ###
       ###############################################
-      AZURE_WEBAPP_NAME: <username>-ttt-app
+      AZURE_WEBAPP_NAME: jazzedine-ttt-app
 
     jobs:
       setup-up-azure-resources:
@@ -138,7 +138,7 @@ The second job destroys Azure resources so that you do not use your free minutes
 
 ### :keyboard: Activity 2: Apply labels to create resources
 
-1. Edit the `spinup-destroy.yml` file in your open pull request and replace any `<username>` placeholders with your GitHub username. Commit this change directly to the `azure-configuration` branch.
+1. Edit the `spinup-destroy.yml` file in your open pull request and replace any `jazzedine` placeholders with your GitHub username. Commit this change directly to the `azure-configuration` branch.
 1. Back in the Pull request, create and apply the `spin up environment` label to your open pull request
 1. Wait for the GitHub Actions workflow to run and spin up your Azure environment. You can follow along in the Actions tab or in the pull request merge box.
 1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.

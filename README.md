@@ -58,8 +58,8 @@ To deploy successfully to our Azure environment:
     env:
       IMAGE_REGISTRY_URL: ghcr.io
       AZURE_RESOURCE_GROUP: cd-with-actions
-      AZURE_APP_PLAN: actions-ttt-deployment
-      AZURE_LOCATION: '"East US"'
+      AZURE_APP_PLAN: plan-ttt
+      AZURE_LOCATION: canadacentral
       ###############################################
       ### Replace <username> with GitHub username ###
       ###############################################
